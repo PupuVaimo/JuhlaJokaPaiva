@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tietoa meistä</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigaatio -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Juhla joka päivä</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Etusivu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="juhlat.html">Juhlat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">Tietoa meistä</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Otsikkoalue -->
+    <header class="header">
+      <div class="overlay">
+        <h1>Tietoa meistä</h1>
+        <p>Kuka olen ja miten voit ottaa yhteyttä?</p>
+      </div>
+    </header>
+
+    <!-- Esittely -->
+    <section class="container my-5 text-center">
+      <h2>Kuka olen?</h2>
+      <img
+        src="img/profile.jpeg"
+        class="profile-img"
+        alt="Valeriya Malykhina"
+      />
+      <h3>Valeriya Malykhina</h3>
+      <p>PupuParty Agency</p>
+      <p>Juhlat ja tapahtumat Suomessa</p>
+    </section>
+
+    <!-- Yhteystiedot -->
+    <section class="container my-5">
+      <h2 class="text-center">Yhteystiedot</h2>
+      <ul class="list-group text-center">
+        <li class="list-group-item">
+          <strong>Osoite:</strong> 80140, Joensuu, Finland
+        </li>
+        <li class="list-group-item">
+          <strong>Email:</strong>
+          <a href="mailto:PupuVaimoFin@gmail.com">PupuVaimoFin@gmail.com</a>
+        </li>
+        <li class="list-group-item">
+          <strong>Puhelin:</strong>
+          <a href="tel:+358413182067">+358 41 318 2067</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Yhteydenottolomake -->
+    <section class="container my-5">
+      <h2 class="text-center">Lähetä viesti</h2>
+      <form id="contact-form" class="text-center">
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Nimi"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Sähköposti"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <textarea
+            class="form-control"
+            id="message"
+            rows="5"
+            placeholder="Kirjoita viesti"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Lähetä viesti</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+      <p>© 2025 Juhla joka päivä | Kaikki oikeudet pidätetään</p>
+    </footer>
+
+    <!-- Skriptit -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
